@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy – ShopInline</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --font-sans: 'Inter', 'Rubik', system-ui, -apple-system, sans-serif;
+      --bg-page: #f8fafc;
+      --bg-card: #ffffff;
+      --text-primary: #0f172a;
+      --text-muted: #64748b;
+      --border-color: #e2e8f0;
+      --primary: #2563eb;
+      --primary-hover: #1d4ed8;
+      --success: #059669;
+      --success-light: #ecfdf5;
+      --warning: #b45309;
+      --warning-light: #fffbeb;
+      --card-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.05), 0 2px 4px -2px rgb(0 0 0 / 0.05), 0 0 0 1px rgb(0 0 0 / 0.02);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg-page: #0b0f19;
+        --bg-card: #151b2c;
+        --text-primary: #f1f5f9;
+        --text-muted: #94a3b8;
+        --border-color: #242f47;
+        --primary: #60a5fa;
+        --primary-hover: #93c5fd;
+        --success: #34d399;
+        --success-light: #064e3b;
+        --warning: #fbbf24;
+        --warning-light: #78350f;
+        --card-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.2), 0 2px 4px -2px rgb(0 0 0 / 0.2), 0 0 0 1px rgb(255 255 255 / 0.02);
+      }
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: var(--font-sans);
+      background-color: var(--bg-page);
+      color: var(--text-primary);
+      line-height: 1.7;
+      padding-block: 4rem;
+      padding-inline: 1.5rem;
+    }
+
+    .container { max-inline-size: 800px; margin-inline: auto; }
+
+    header { text-align: center; margin-block-end: 3rem; }
+
+    .logo { inline-size: 80px; block-size: 80px; margin-block-end: 0.75rem; }
+
+    h1 { font-size: 2.25rem; font-weight: 700; letter-spacing: -0.025em; margin-block-end: 0.5rem; }
+
+    .subtitle { color: var(--text-muted); font-size: 1.1rem; margin-block-end: 0.75rem; }
+
+    .updated {
+      display: inline-block;
+      font-size: 0.875rem;
+      color: var(--text-muted);
+      background-color: var(--bg-card);
+      padding-block: 0.25rem;
+      padding-inline: 0.75rem;
+      border-radius: 9999px;
+      border: 1px solid var(--border-color);
+    }
+
+    main { display: flex; flex-direction: column; gap: 2rem; }
+
+    section {
+      background-color: var(--bg-card);
+      border-radius: 16px;
+      padding: 2rem;
+      box-shadow: var(--card-shadow);
+      border: 1px solid var(--border-color);
+    }
+
+    h2 {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-block-end: 1.25rem;
+      border-block-end: 1px solid var(--border-color);
+      padding-block-end: 0.5rem;
+    }
+
+    h3 { font-size: 1rem; font-weight: 600; margin-block: 1.25rem 0.5rem; }
+
+    p { margin-block-end: 1rem; font-size: 0.975rem; }
+    p:last-child { margin-block-end: 0; }
+
+    ul { list-style-type: none; display: flex; flex-direction: column; gap: 0.75rem; margin-block-end: 1rem; }
+    ul:last-child { margin-block-end: 0; }
+
+    li { position: relative; padding-inline-start: 1.5rem; font-size: 0.95rem; }
+
+    li::before {
+      content: "•";
+      position: absolute;
+      inset-inline-start: 0.25rem;
+      color: var(--primary);
+      font-weight: bold;
+    }
+
+    code { font-size: 0.85em; direction: ltr; unicode-bidi: isolate; }
+
+    .table-container { overflow-x: auto; margin-block-start: 1.25rem; border-radius: 8px; border: 1px solid var(--border-color); }
+
+    table { inline-size: 100%; border-collapse: collapse; font-size: 0.9rem; }
+
+    th, td { padding-block: 0.75rem; padding-inline: 1rem; border-block-end: 1px solid var(--border-color); text-align: start; vertical-align: top; }
+    th { background-color: var(--bg-page); font-weight: 600; }
+    tr:last-child td { border-block-end: none; }
+
+    .badge {
+      display: inline-block;
+      padding-block: 0.125rem;
+      padding-inline: 0.5rem;
+      border-radius: 4px;
+      font-size: 0.75rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      white-space: nowrap;
+    }
+    .badge-success { background-color: var(--success-light); color: var(--success); }
+    .badge-warning { background-color: var(--warning-light); color: var(--warning); }
+
+    a { color: var(--primary); text-decoration: none; }
+    a:hover { color: var(--primary-hover); text-decoration: underline; }
+
+    footer { text-align: center; margin-block-start: 3rem; color: var(--text-muted); font-size: 0.875rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="16 16 96 96" role="img" aria-label="ShopInline">
+        <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0EA5E9"/><stop offset="1" stop-color="#2563EB"/></linearGradient></defs>
+        <rect x="16" y="16" width="96" height="96" rx="24" fill="url(#bg)"/>
+        <g transform="rotate(-45 64 64)">
+          <path d="M46 48 H88 a7 7 0 0 1 7 7 V73 a7 7 0 0 1 -7 7 H46 L31 64 Z" fill="#fff"/>
+          <circle cx="46" cy="64" r="5" fill="#1D4ED8"/>
+        </g>
+        <path d="M74 66 L74 98 L82 90 L88 102 L94 99 L88 87 L99 87 Z" fill="#F59E0B" stroke="#0F172A" stroke-width="3.5" stroke-linejoin="round"/>
+      </svg>
+      <h1>Privacy Policy</h1>
+      <p class="subtitle">ShopInline: Live Product Editor for WooCommerce</p>
+      <span class="updated">Last updated: October 2026</span>
+    </header>
+
+    <main>
+      <section>
+        <h2>The short version</h2>
+        <ul>
+          <li>ShopInline has <strong>no server of its own</strong>. We do not run analytics or tracking, show ads, or receive any of your data.</li>
+          <li>Your keys and settings are stored <strong>only in your browser</strong>.</li>
+          <li>Your product data goes to <strong>your own store</strong>. It goes anywhere else only when you use an optional feature that needs it, as listed below.</li>
+          <li>We do not sell or share data, and we do not use it for anything other than editing your products.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>What is stored in your browser</h2>
+        <p>Stored with <code>chrome.storage</code> on your device. Nothing here is synced to other devices or sent to us.</p>
+        <ul>
+          <li><strong>Your stores</strong>: each store's address, its WooCommerce REST API keys (Consumer Key and Secret) and, if you add one, a WordPress Application Password used to upload images.</li>
+          <li><strong>Settings</strong>: interface language, editor layout, AI preferences and, if you add one, your Google Gemini API key.</li>
+          <li><strong>Google connection</strong> (optional): which Google Analytics 4 property and Search Console site belong to which store, and the email of the Google account you connected. The Google sign-in token is kept only for the current browser session and is discarded when the browser closes.</li>
+          <li><strong>Cached figures</strong>: sales and analytics numbers shown on product cards, kept for up to 12 hours so pages load faster.</li>
+        </ul>
+        <p>Removing the extension deletes all of it. You can also remove a store or disconnect Google from the extension's settings at any time.</p>
+      </section>
+
+      <section>
+        <h2>What is saved in your store</h2>
+        <p>Your edits are saved to your own WooCommerce store, which is the point of the extension. With each edit, ShopInline also adds an entry to that product's change log, stored in your store as product data. The entry records what changed, when, and the email address of the Chrome profile that made the change, read through the Chrome Identity API. This lets a shop with several editors see who changed what. The log lives only in your store, which you control.</p>
+      </section>
+
+      <section>
+        <h2>Where data is sent, and when</h2>
+        <p>All requests go directly from your browser to the service named. None pass through us.</p>
+
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr><th>Recipient</th><th>What is sent</th><th>When</th><th>Use</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Your WooCommerce store</td>
+                <td>Product reads and edits, images, and sales reports, authenticated with your keys</td>
+                <td>Whenever you use the extension on your store</td>
+                <td><span class="badge badge-success">Core</span></td>
+              </tr>
+              <tr>
+                <td>Google Gemini API<br><code>generativelanguage.googleapis.com</code></td>
+                <td>Product title and text, your instructions, and for alt text, a reduced copy of the product photos. Sent with your own API key</td>
+                <td>Only when you ask for AI writing, SEO text or alt text</td>
+                <td><span class="badge badge-warning">Optional</span></td>
+              </tr>
+              <tr>
+                <td>Google Analytics 4, Search Console and Google sign-in</td>
+                <td>Read-only requests for your own properties' reports</td>
+                <td>Only after you connect Google, and when you view sales and traffic figures</td>
+                <td><span class="badge badge-warning">Optional</span></td>
+              </tr>
+              <tr>
+                <td>Public image hosts<br><code>uguu.se</code>, <code>kappa.lol</code>, <code>catbox.moe</code>, <code>0x0.st</code></td>
+                <td>An edited product image, or a copy of an image link you add</td>
+                <td>Fallback only, and only after you agree in the prompt: when an image cannot be uploaded straight into your store's media library, or an image link cannot be read</td>
+                <td><span class="badge badge-warning">Fallback</span></td>
+              </tr>
+              <tr>
+                <td>img.ly CDN<br><code>staticimgly.com</code></td>
+                <td>Nothing about you; the background-removal model is downloaded from it</td>
+                <td>First use of background removal</td>
+                <td><span class="badge badge-warning">Optional</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>About the image hosts</h3>
+        <p>When ShopInline cannot put an edited image directly into your store's media library, for example because your site blocks direct uploads, it can place the image on one of the free public hosts above so WooCommerce can import it from a link. The same hosts are used to fetch a readable copy of an image link you add when the server behind that link refuses to share it. An image placed there can be opened by anyone who has the link, and is kept according to that host's own terms.</p>
+        <p>ShopInline asks you before it sends any image to these hosts, and sends nothing if you decline. If you tick "Don't ask again", you can turn the question back on under Settings → Image uploads in the extension popup. To avoid this route entirely, stay logged in to WordPress in the same browser, or add a WordPress Application Password in the store's settings, so images upload straight to your store.</p>
+
+        <h3>On your device only</h3>
+        <p>Background removal and Chrome's built-in AI (used for alt text when available) run on your own computer. The images they process are not uploaded anywhere for this.</p>
+
+        <h3>Third-party terms</h3>
+        <p>Data you choose to send to Google is handled under the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a> and the <a href="https://ai.google.dev/gemini-api/terms" target="_blank" rel="noopener noreferrer">Gemini API Additional Terms</a>. Note that when you use a free-tier Gemini key, Google may use the content to improve its products.</p>
+      </section>
+
+      <section>
+        <h2>Google user data</h2>
+        <p>If you connect Google, ShopInline asks for read-only access to Google Analytics (<code>analytics.readonly</code>) and Search Console (<code>webmasters.readonly</code>), plus your basic profile (<code>openid</code>, <code>email</code>). It uses this only to show visits, conversion and search queries for your own products inside the extension. This data stays in your browser, is never transferred to us or anyone else, and is not used for advertising.</p>
+        <p>ShopInline's use of information received from Google APIs adheres to the <a href="https://developer.chrome.com/docs/webstore/program-policies/limited-use" target="_blank" rel="noopener noreferrer">Chrome Web Store User Data Policy</a>, including the Limited Use requirements. Disconnecting Google in settings revokes the token.</p>
+      </section>
+
+      <section>
+        <h2>Permissions, and why</h2>
+        <ul>
+          <li><strong>storage</strong>: saves the settings described above on your device.</li>
+          <li><strong>activeTab</strong>: lets the popup see which site you are on, and lets the keyboard shortcut open the editor on that tab.</li>
+          <li><strong>scripting</strong>: loads the editor into tabs of a store you have just connected, and runs the optional "Create keys for me" step on your store's WooCommerce settings page.</li>
+          <li><strong>contextMenus</strong>: adds the right-click "Assign to WooCommerce Field" menu on your stores.</li>
+          <li><strong>offscreen</strong>: runs on-device background removal.</li>
+          <li><strong>identity</strong>: signs in to Google when you connect Analytics, and reads your Chrome profile email for the change log.</li>
+          <li><strong>Host access</strong>: fixed access to Gemini and the image hosts listed above. Access to your store's own website is asked for separately, one store at a time, when you add it.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Children</h2>
+        <p>ShopInline is a tool for store owners and is not directed at children under 13.</p>
+      </section>
+
+      <section>
+        <h2>Changes</h2>
+        <p>If this policy changes, the new version will be posted here with a new date. A change that affects what data leaves your device will also be noted in the extension's release notes.</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>Questions? Contact <a href="mailto:bnk989@gmail.com">bnk989@gmail.com</a></p>
+      <p>ShopInline is not affiliated with or endorsed by Automattic or WooCommerce.</p>
+    </footer>
+  </div>
+</body>
+</html>
