@@ -163,6 +163,7 @@
           <li>ShopInline has <strong>no server of its own</strong>. We do not run analytics or tracking, show ads, or receive any of your data.</li>
           <li>Your keys and settings are stored <strong>only in your browser</strong>.</li>
           <li>Your product data goes to <strong>your own store</strong>. It goes anywhere else only when you use an optional feature that needs it, as listed below.</li>
+          <li>When you <strong>ask a question</strong> about your store's figures, those figures go to Google Gemini with your own key, as totals only: never a visitor, an order or a customer.</li>
           <li>We do not sell or share data, and we do not use it for anything other than editing your products.</li>
         </ul>
       </section>
@@ -207,9 +208,15 @@
                 <td><span class="badge badge-warning">Optional</span></td>
               </tr>
               <tr>
+                <td>Google Gemini API, for questions<br><code>generativelanguage.googleapis.com</code></td>
+                <td>Your question, the earlier questions and answers in the same conversation, and the store figures it is about: product and category names with units sold, orders and revenue from your store's sales reports; visits, engagement and the device split from Google Analytics; the most-used search terms; menu labels and their clicks; and the page you are on (its address and title, and for the This page tab, how its visits arrived: channels, referring sites and pages, campaign names). Totals only, never a single visitor, order or customer. Sent with your own API key</td>
+                <td>Only when you send a question in the Ask tab, or press "Ask about this" on a figure</td>
+                <td><span class="badge badge-warning">Optional</span></td>
+              </tr>
+              <tr>
                 <td>Google Analytics 4, Search Console and Google sign-in</td>
                 <td>Read-only requests for your own properties' reports</td>
-                <td>Only after you connect Google, and when you view sales and traffic figures</td>
+                <td>Only after you connect Google, and when you view sales and traffic figures or ask a question about them</td>
                 <td><span class="badge badge-warning">Optional</span></td>
               </tr>
               <tr>
@@ -236,12 +243,13 @@
         <p>Background removal and Chrome's built-in AI (used for alt text when available) run on your own computer. The images they process are not uploaded anywhere for this.</p>
 
         <h3>Third-party terms</h3>
-        <p>Data you choose to send to Google is handled under the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a> and the <a href="https://ai.google.dev/gemini-api/terms" target="_blank" rel="noopener noreferrer">Gemini API Additional Terms</a>. Note that when you use a free-tier Gemini key, Google may use the content to improve its products.</p>
+        <p>Data you choose to send to Google is handled under the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a> and the <a href="https://ai.google.dev/gemini-api/terms" target="_blank" rel="noopener noreferrer">Gemini API Additional Terms</a>. Note that when you use a free-tier Gemini key, Google may use the content, including the store figures sent with a question, to improve its products.</p>
       </section>
 
       <section>
         <h2>Google user data</h2>
-        <p>If you connect Google, ShopInline asks for read-only access to Google Analytics (<code>analytics.readonly</code>) and Search Console (<code>webmasters.readonly</code>), plus your basic profile (<code>openid</code>, <code>email</code>). It uses this only to show visits, conversion and search queries for your own products inside the extension. This data stays in your browser, is never transferred to us or anyone else, and is not used for advertising.</p>
+        <p>If you connect Google, ShopInline asks for read-only access to Google Analytics (<code>analytics.readonly</code>) and Search Console (<code>webmasters.readonly</code>), plus your basic profile (<code>openid</code>, <code>email</code>). It uses this only to show visits, conversion and search queries for your own products inside the extension, and to explain them when you ask. This data stays in your browser and is never transferred to us; no copy of it ever passes through us.</p>
+        <p>The one transfer is one you ask for. When you send a question in the Ask tab, or press "Ask about this" on a figure, the Analytics and Search Console figures that question is about are sent, together with your question, to the Google Gemini API under your own API key, so Gemini can answer it. Nothing is sent until you ask. What is sent is aggregated totals for your own store (visits, engagement, devices, channels, referring sites, campaign names, search terms), never data about an individual visitor. Google user data is not sold, not used for advertising, and not used for anything other than showing and explaining your own store's figures to you.</p>
         <p>ShopInline's use of information received from Google APIs adheres to the <a href="https://developer.chrome.com/docs/webstore/program-policies/limited-use" target="_blank" rel="noopener noreferrer">Chrome Web Store User Data Policy</a>, including the Limited Use requirements. Disconnecting Google in settings revokes the token.</p>
       </section>
 
