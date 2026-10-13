@@ -214,6 +214,12 @@
                 <td><span class="badge badge-warning">Optional</span></td>
               </tr>
               <tr>
+                <td>Chrome's speech recognition service (Google)</td>
+                <td>Your voice while you dictate a question, turned into text by Chrome itself; ShopInline never receives the audio</td>
+                <td>Only while the microphone is on in the Ask tab</td>
+                <td><span class="badge badge-warning">Optional</span></td>
+              </tr>
+              <tr>
                 <td>Google Analytics 4, Search Console and Google sign-in</td>
                 <td>Read-only requests for your own properties' reports</td>
                 <td>Only after you connect Google, and when you view sales and traffic figures or ask a question about them</td>
@@ -238,6 +244,9 @@
         <h3>About the image hosts</h3>
         <p>When ShopInline cannot put an edited image directly into your store's media library, for example because your site blocks direct uploads, it can place the image on one of the free public hosts above so WooCommerce can import it from a link. The same hosts are used to fetch a readable copy of an image link you add when the server behind that link refuses to share it. An image placed there can be opened by anyone who has the link, and is kept according to that host's own terms.</p>
         <p>ShopInline asks you before it sends any image to these hosts, and sends nothing if you decline. If you tick "Don't ask again", you can turn the question back on under Settings → Image uploads in the extension popup. To avoid this route entirely, stay logged in to WordPress in the same browser, or add a WordPress Application Password in the store's settings, so images upload straight to your store.</p>
+
+        <h3>Speaking a question</h3>
+        <p>The microphone button in the Ask tab uses the speech recognition built into Chrome. Chrome sends your voice to Google's speech service to turn it into text, and that text appears in the question box for you to read and send. ShopInline does not record, store or receive the audio, and does not use your Gemini key for this. Chrome asks you for microphone access for your store's website the first time; ShopInline itself has no microphone permission.</p>
 
         <h3>On your device only</h3>
         <p>Background removal and Chrome's built-in AI (used for alt text when available) run on your own computer. The images they process are not uploaded anywhere for this.</p>
